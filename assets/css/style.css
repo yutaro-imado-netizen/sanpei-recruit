@@ -17,3 +17,43 @@
 .people-grid>a:after{content:"READ INTERVIEW →";display:inline-block;margin-top:15px;font:600 10px Oswald;letter-spacing:.12em;color:var(--red)}
 .people-grid>a:hover{transform:translateY(-5px)}
 @media(max-width:850px){.header.scrolled{height:64px}.header.scrolled .nav{inset:64px 0 auto 0;height:calc(100vh - 64px)}}
+
+/* premium interview detail */
+.interview-detail{max-width:1120px}
+.interview-detail .interview-title{position:relative;text-align:left;margin:-105px 0 110px auto;background:#fff;width:min(820px,88%);padding:52px 64px 46px;z-index:3;box-shadow:0 22px 60px rgba(20,20,20,.08)}
+.interview-detail .interview-title:before{content:"";position:absolute;left:0;top:0;width:7px;height:100%;background:var(--red)}
+.interview-detail .interview-title>p{margin:0 0 15px;font-size:13px}
+.interview-detail .interview-title h2{font-size:clamp(32px,4vw,54px);letter-spacing:-.04em;margin:0 0 22px;line-height:1.45}
+.interview-detail .interview-title strong{display:inline-flex;align-items:center;gap:15px;font-size:15px}
+.interview-detail .interview-title strong:before{content:"";width:38px;height:1px;background:var(--red)}
+.interview-detail article{position:relative;grid-template-columns:1fr 47%;gap:9%;margin-bottom:145px}
+.interview-detail article.flip{grid-template-columns:47% 1fr}
+.interview-detail article>div:first-child{position:relative;padding:42px 0}
+.interview-detail article small{display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.15em}
+.interview-detail article small:after{content:"";height:1px;width:48px;background:var(--red)}
+.interview-detail article h3{font-size:clamp(23px,2.4vw,32px);letter-spacing:-.025em;margin:20px 0 28px}
+.interview-detail article p{font-size:15px;line-height:2.15;color:#4d5155}
+.interview-detail article .placeholder{height:430px;border-radius:2px;position:relative}
+.interview-detail article .placeholder:after{content:"";position:absolute;width:70%;height:70%;border:1px solid var(--red);right:-18px;bottom:-18px;z-index:-1}
+.interview-detail article.flip .placeholder:after{right:auto;left:-18px}
+.interview-detail article:nth-of-type(odd)>div:first-child:before{content:attr(data-q);position:absolute;z-index:-1;top:-25px;left:-25px;font:600 110px Oswald;color:#f3f0ea}
+.interview-detail .message{position:relative;margin-top:30px;padding:85px 9%;background:var(--ink);color:#fff;text-align:left;overflow:hidden}
+.interview-detail .message:after{content:"MESSAGE";position:absolute;right:-15px;bottom:-45px;font:600 120px Oswald;color:rgba(255,255,255,.035);letter-spacing:.02em}
+.interview-detail .message>p:first-child{color:#fff8}
+.interview-detail .message h2{font-size:clamp(32px,4vw,48px);margin:15px 0 25px}
+.interview-detail .message>p:last-child{margin:0;max-width:760px;color:#e5e5e5;font-size:15px}
+.interview-back{display:flex;justify-content:center;margin:70px 0 0}
+.interview-back a{display:flex;align-items:center;justify-content:space-between;width:300px;padding:19px 24px;border:1px solid var(--ink);font-size:13px;font-weight:700}
+@media(max-width:850px){
+.interview-detail .interview-title{margin:-55px 0 75px auto;width:94%;padding:34px 28px 32px}
+.interview-detail .interview-title h2{font-size:29px}
+.interview-detail article,.interview-detail article.flip{grid-template-columns:1fr;margin-bottom:90px;gap:22px}
+.interview-detail article>div:first-child,.interview-detail article.flip>div:first-child{padding:12px 0;order:0}
+.interview-detail article .placeholder,.interview-detail article.flip .placeholder{height:300px;order:-1;margin-bottom:16px}
+.interview-detail article .placeholder:after{right:-8px;bottom:-8px}
+.interview-detail article.flip .placeholder:after{left:-8px}
+.interview-detail article h3{font-size:23px;margin:15px 0 18px}
+.interview-detail article p{font-size:14px;line-height:2}
+.interview-detail .message{margin-left:-24px;margin-right:-24px;padding:60px 28px}
+.interview-detail .message:after{font-size:75px}
+}
