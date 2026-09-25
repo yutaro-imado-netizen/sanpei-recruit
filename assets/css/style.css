@@ -1829,3 +1829,53 @@ footer small{
     min-width:0;
   }
 }
+
+
+/* red section contrast fix */
+/* Keep every red-background section high-contrast and easy to read */
+.business,
+.jobs,
+.vf-workflow{
+  color:#fff;
+}
+
+.business .section-head h2,
+.business .section-head p,
+.business .business-lead,
+.business .business-list h3,
+.business .business-list p,
+.business .business-list span,
+.jobs .section-head h2,
+.jobs .section-head p,
+.jobs .job-list strong,
+.jobs .job-list span,
+.jobs .job-list b,
+.vf-workflow .vf-section-head h2,
+.vf-workflow .vf-section-head p,
+.vf-workflow .vf-flow-grid b,
+.vf-workflow .vf-flow-grid strong,
+.vf-workflow .vf-flow-grid p,
+.vf-workflow .vf-flow-grid i{
+  color:#fff!important;
+}
+
+.business .section-head p,
+.business .business-list span,
+.jobs .section-head p,
+.jobs .job-list span,
+.vf-workflow .vf-section-head p,
+.vf-workflow .vf-flow-grid b{
+  color:rgba(255,255,255,.82)!important;
+}
+
+.business .business-list p,
+.vf-workflow .vf-flow-grid p{
+  color:rgba(255,255,255,.94)!important;
+}
+
+/* Red subpage title panels */
+.subhero>div:first-child,
+.subhero>div:first-child h1,
+.subhero>div:first-child p{
+  color:#fff!important;
+}
