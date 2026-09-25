@@ -181,3 +181,74 @@
     line-height:2!important;
   }
 }
+
+
+/* real recruitment photography */
+.site-photo{
+  position:relative;
+  overflow:hidden;
+  background:#d7d3cc;
+}
+.site-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.hero-photo.site-photo img{
+  object-position:center center;
+}
+.intro-grid .site-photo img{
+  object-position:center 35%;
+}
+.card .site-photo img{
+  transition:transform .5s ease;
+}
+.card:hover .site-photo img{
+  transform:scale(1.035);
+}
+.subhero>.site-photo{
+  min-height:100%;
+}
+.subhero>.site-photo img{
+  object-position:center center;
+}
+.factory-bg.site-photo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.service-grid article{
+  overflow:hidden;
+}
+.service-grid .service-photo{
+  height:230px;
+  margin:-40px -40px 34px;
+}
+.service-grid .service-photo img{
+  transition:transform .5s ease;
+}
+.service-grid article:hover .service-photo img{
+  transform:scale(1.03);
+}
+.tour .site-photo img{
+  object-position:center center;
+}
+.people .portrait.site-photo img{
+  object-position:center top;
+}
+
+@media(max-width:850px){
+  .hero-photo.site-photo img{
+    object-position:center center;
+  }
+  .subhero>.site-photo{
+    min-height:0;
+  }
+  .service-grid .service-photo{
+    height:210px;
+    margin:-28px -28px 28px;
+  }
+}
