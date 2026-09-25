@@ -142,3 +142,28 @@
     width:94%;
   }
 }
+
+/* interview readability + true viewport-centered top message */
+.interview-detail .interview-title{
+  margin:-72px auto 115px!important;
+  width:min(980px,calc(100vw - 80px))!important;
+  max-width:none!important;
+  left:auto!important;
+  right:auto!important;
+}
+.interview-detail article p{
+  font-size:17px!important;
+  line-height:2.05!important;
+  color:#35393d!important;
+  font-weight:500;
+}
+@media(max-width:850px){
+  .interview-detail .interview-title{
+    margin:-28px auto 75px!important;
+    width:calc(100vw - 48px)!important;
+  }
+  .interview-detail article p{
+    font-size:16px!important;
+    line-height:2!important;
+  }
+}
