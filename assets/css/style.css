@@ -1014,3 +1014,253 @@ body{
     object-position:center center;
   }
 }
+
+
+/* global typography readability pass v2 */
+:root{
+  --muted:#555b60;
+}
+
+body{
+  font-size:17px;
+  line-height:1.85;
+  font-weight:500;
+  color:#202326;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Navigation and brand */
+.logo{
+  font-size:21px;
+}
+.logo small{
+  font-size:10px;
+}
+.nav{
+  font-size:15px!important;
+  font-weight:700;
+}
+
+/* Section labels and main headings */
+.eyebrow,
+.section-head>p,
+.subhero>div>p{
+  font-size:13px!important;
+  font-weight:600!important;
+  letter-spacing:.18em;
+}
+.section-head h2{
+  font-size:clamp(38px,4vw,60px)!important;
+  line-height:1.38!important;
+  font-weight:800;
+  color:#202326;
+}
+.subhero h1{
+  font-size:clamp(52px,5.5vw,82px)!important;
+  line-height:1.24!important;
+  font-weight:800;
+}
+.article-grid h3,
+.timeline h3{
+  font-size:23px;
+  line-height:1.5;
+  font-weight:800;
+}
+
+/* Main body copy on light backgrounds */
+.copy p,
+.article-grid p,
+.leadtext,
+.service-grid p,
+.job-cards p,
+.timeline p,
+.tour p,
+.entry-box p,
+.message>p:last-child{
+  font-size:17px!important;
+  line-height:2!important;
+  font-weight:500;
+  color:#34383c!important;
+}
+.article-grid strong,
+.timeline strong,
+.entry-box strong{
+  font-weight:800;
+  color:#202326;
+}
+
+/* Cards and supporting text */
+.card h3{
+  font-size:22px!important;
+  line-height:1.5;
+  font-weight:800;
+}
+.card small,
+.service-grid span,
+.job-cards small,
+.people-grid small{
+  font-size:12px!important;
+  font-weight:600;
+}
+.service-grid h3,
+.job-cards h2{
+  font-size:29px!important;
+  line-height:1.45;
+}
+.people-grid h3{
+  font-size:25px!important;
+  line-height:1.55;
+}
+.people-grid p,
+.interview p{
+  font-size:16.5px!important;
+  line-height:1.95!important;
+  color:#3f4448!important;
+}
+.job-list strong{
+  font-size:23px!important;
+}
+.quote{
+  font-size:21px!important;
+  line-height:2.15!important;
+  color:#2f3337;
+}
+
+/* Dark/red sections need stronger white text */
+.business-lead{
+  font-size:18px!important;
+  line-height:2!important;
+  color:#fff!important;
+  font-weight:500;
+}
+.business-list h3{
+  font-size:24px!important;
+}
+.business-list p{
+  font-size:15.5px!important;
+  line-height:1.9!important;
+  color:rgba(255,255,255,.94)!important;
+}
+.business-list span{
+  color:rgba(255,255,255,.82)!important;
+}
+.section-head.light p{
+  color:rgba(255,255,255,.88)!important;
+}
+
+/* Work page: improve legibility without making cards taller again */
+.work-hero-lead{
+  font-size:17px!important;
+  line-height:1.85!important;
+  font-weight:600!important;
+}
+.work-role-content>h2{
+  font-size:clamp(34px,3vw,46px)!important;
+  line-height:1.35;
+}
+.work-role-lead{
+  font-size:21px!important;
+  line-height:1.55!important;
+  font-weight:800!important;
+}
+.work-role-content>p:not(.work-role-lead){
+  font-size:15.5px!important;
+  line-height:1.9!important;
+  color:#3f4448!important;
+}
+.work-detail-grid strong{
+  font-size:16px!important;
+  line-height:1.5;
+}
+.work-detail-grid p{
+  font-size:14px!important;
+  line-height:1.72!important;
+  color:#555b60!important;
+}
+.work-fit span{
+  font-size:13px!important;
+}
+.work-fit p{
+  font-size:14px!important;
+  line-height:1.75!important;
+  color:#3f4448!important;
+}
+.career-flow span{
+  font-size:14px!important;
+}
+
+/* Buttons and utility links */
+.text-link,
+.outline-button,
+.entry-box a,
+.cta a,
+.factory-copy a{
+  font-size:16px!important;
+  font-weight:700;
+}
+footer{
+  font-size:15px;
+}
+footer small{
+  font-size:12px;
+}
+
+/* Keep long-form interview answers comfortably readable */
+.interview-detail article p{
+  font-size:19px!important;
+  line-height:2.05!important;
+  color:#303438!important;
+  font-weight:500!important;
+}
+
+@media(max-width:850px){
+  body{
+    font-size:16.5px;
+  }
+  .logo{
+    font-size:18px;
+  }
+  .nav{
+    font-size:16px!important;
+  }
+  .section-head h2{
+    font-size:36px!important;
+    line-height:1.42!important;
+  }
+  .subhero h1{
+    font-size:46px!important;
+  }
+  .copy p,
+  .article-grid p,
+  .leadtext,
+  .service-grid p,
+  .job-cards p,
+  .timeline p,
+  .tour p,
+  .entry-box p,
+  .message>p:last-child{
+    font-size:16.5px!important;
+    line-height:1.95!important;
+  }
+  .people-grid p,
+  .interview p{
+    font-size:16px!important;
+  }
+  .work-role-content>h2{
+    font-size:35px!important;
+  }
+  .work-role-lead{
+    font-size:20px!important;
+  }
+  .work-role-content>p:not(.work-role-lead){
+    font-size:15.5px!important;
+  }
+  .work-detail-grid p,
+  .work-fit p{
+    font-size:14px!important;
+  }
+  .interview-detail article p{
+    font-size:17px!important;
+    line-height:2!important;
+  }
+}
