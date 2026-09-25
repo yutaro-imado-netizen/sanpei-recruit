@@ -313,3 +313,34 @@
       rgba(18,20,22,.08) 78%);
   }
 }
+
+
+/* homepage hero framing v2 */
+@media(min-width:851px){
+  .hero{
+    height:min(980px,calc(100vh + 120px));
+    min-height:800px;
+    padding-top:0;
+  }
+  .hero-photo{
+    inset:0;
+  }
+  .hero-photo.hero-group img{
+    object-position:center bottom;
+  }
+  .hero-copy{
+    top:52%;
+  }
+}
+@media(max-width:850px){
+  .hero{
+    padding-top:0;
+    height:800px;
+  }
+  .hero-photo{
+    inset:0;
+  }
+  .hero-photo.hero-group img{
+    object-position:56% bottom;
+  }
+}
