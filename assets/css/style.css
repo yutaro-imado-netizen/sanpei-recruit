@@ -2103,3 +2103,439 @@ footer small{
   .jobs-bottom-inner>span{font-size:15px}
   .jobs-bottom-inner>a{width:100%}
 }
+
+
+/* recruitment spec page redesign */
+.recruit-page{background:#f1eee8}
+.recruit-container{
+  width:min(1180px,calc(100% - 80px));
+  margin:auto;
+}
+.recruit-hero{
+  min-height:510px;
+  display:grid;
+  grid-template-columns:42% 58%;
+  background:#1f2225;
+  color:#fff;
+}
+.recruit-hero-copy{
+  padding:95px max(40px,7vw);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.recruit-hero-copy>p{
+  margin:0 0 14px;
+  font:600 13px Oswald;
+  letter-spacing:.2em;
+  color:#d45a66;
+}
+.recruit-hero-copy h1{
+  margin:0;
+  font-size:clamp(54px,5.6vw,82px);
+  line-height:1.2;
+  letter-spacing:-.05em;
+}
+.recruit-hero-copy>span{
+  display:block;
+  max-width:520px;
+  margin-top:24px;
+  font-size:16px;
+  line-height:1.95;
+  color:rgba(255,255,255,.88);
+}
+.recruit-hero-photo{min-height:510px}
+.recruit-hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 45%;
+}
+
+.recruit-index{
+  padding:88px 0 100px;
+  background:#fff;
+}
+.recruit-index-head>p{
+  margin:0 0 12px;
+  color:var(--red);
+  font:600 12px Oswald;
+  letter-spacing:.2em;
+}
+.recruit-index-head h2{
+  margin:0;
+  font-size:clamp(32px,3.5vw,50px);
+  line-height:1.4;
+}
+.recruit-index-grid{
+  margin-top:46px;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.recruit-index-grid a{
+  min-height:210px;
+  padding:23px 20px;
+  position:relative;
+  border-right:1px solid var(--line);
+  transition:.22s;
+}
+.recruit-index-grid a:last-child{border-right:0}
+.recruit-index-grid a:hover{
+  background:#f6f2ec;
+  transform:translateY(-3px);
+}
+.recruit-index-grid span{
+  display:block;
+  font:600 10px Oswald;
+  letter-spacing:.12em;
+  color:var(--red);
+}
+.recruit-index-grid strong{
+  display:block;
+  margin-top:28px;
+  font-size:18px;
+  line-height:1.55;
+}
+.recruit-index-grid em{
+  display:block;
+  margin-top:12px;
+  font-style:normal;
+  font-size:13px;
+  font-weight:700;
+  color:#3d4246;
+}
+.recruit-index-grid b{
+  position:absolute;
+  right:18px;
+  bottom:18px;
+  color:var(--red);
+  font-size:18px;
+}
+
+.recruit-list{
+  padding:100px 0 125px;
+  background:#f1eee8;
+  display:grid;
+  gap:46px;
+}
+.recruit-sheet{
+  width:min(1120px,calc(100% - 80px));
+  margin:auto;
+  background:#fff;
+  border-top:7px solid var(--red);
+  box-shadow:0 16px 44px rgba(0,0,0,.055);
+}
+.recruit-sheet-top{
+  display:grid;
+  grid-template-columns:1fr 330px;
+  gap:40px;
+  padding:42px 42px 34px;
+  align-items:center;
+}
+.recruit-role>span{
+  font:600 11px Oswald;
+  letter-spacing:.16em;
+  color:var(--red);
+}
+.recruit-role h2{
+  margin:10px 0 13px;
+  font-size:clamp(34px,3.4vw,50px);
+  line-height:1.3;
+  letter-spacing:-.04em;
+}
+.recruit-role p{
+  margin:0;
+  max-width:670px;
+  font-size:16px;
+  line-height:1.95;
+  color:#454a4e;
+}
+.recruit-thumb{
+  height:205px;
+  background:#e9e4dc;
+}
+.recruit-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+#mechanic .recruit-thumb img{object-position:center 48%}
+#sales .recruit-thumb img{object-position:center 38%}
+#insurance .recruit-thumb img{object-position:center 42%}
+#mobile .recruit-thumb img{object-position:center center}
+#office .recruit-thumb img{object-position:center 40%}
+
+.recruit-salary{
+  margin:0 42px;
+  padding:30px 34px 28px;
+  background:#202326;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.recruit-salary:after{
+  content:"PAY";
+  position:absolute;
+  right:18px;
+  top:-20px;
+  font:600 100px Oswald;
+  color:rgba(255,255,255,.035);
+  letter-spacing:-.05em;
+}
+.recruit-salary-label{
+  position:relative;
+  z-index:1;
+  font:600 11px Oswald;
+  letter-spacing:.18em;
+  color:#fff8;
+}
+.recruit-salary-main{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:7px;
+}
+.recruit-salary-main small{
+  margin-right:7px;
+  font-size:16px;
+  font-weight:700;
+}
+.recruit-salary-main strong{
+  font:600 clamp(48px,6vw,78px)/1 Oswald;
+  color:#fff;
+}
+.recruit-salary-main i{
+  font-style:normal;
+  font-size:19px;
+  font-weight:800;
+}
+.recruit-salary-main span{
+  margin:0 4px;
+  font-size:25px;
+  color:#fff8;
+}
+.recruit-salary>p{
+  position:relative;
+  z-index:1;
+  margin:12px 0 0;
+  font-size:13px;
+  color:rgba(255,255,255,.78);
+}
+.recruit-salary-contact .recruit-salary-main strong{
+  font-family:"Noto Sans JP",sans-serif;
+  font-size:34px;
+  line-height:1.5;
+}
+
+.mechanic-pay-table{
+  margin:20px 42px 0;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  border:1px solid var(--line);
+}
+.mechanic-pay-table>div{
+  padding:19px 14px;
+  border-right:1px solid var(--line);
+  text-align:center;
+}
+.mechanic-pay-table>div:last-child{border-right:0}
+.mechanic-pay-table span{
+  display:block;
+  font-size:12px;
+  color:#666c70;
+}
+.mechanic-pay-table strong{
+  display:block;
+  margin-top:7px;
+  font-size:15px;
+}
+
+.recruit-detail-grid{
+  margin:28px 42px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.recruit-detail{
+  min-height:145px;
+  padding:23px 25px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.recruit-detail.wide{grid-column:1 / -1}
+.recruit-detail dt{
+  margin:0 0 10px;
+  font-size:13px;
+  font-weight:800;
+  color:var(--red);
+}
+.recruit-detail dd{
+  margin:0;
+  font-size:15px;
+  line-height:1.9;
+  color:#3e4448;
+}
+.recruit-detail dd small{
+  font-size:12px;
+  color:#697075;
+}
+
+.recruit-condition-note{
+  margin:20px 42px 0;
+  padding:20px 22px;
+  background:#f6f3ee;
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:20px;
+  align-items:start;
+}
+.recruit-condition-note strong{
+  font-size:14px;
+}
+.recruit-condition-note p{
+  margin:0;
+  font-size:13px;
+  line-height:1.8;
+  color:#5c6266;
+}
+.recruit-entry-btn{
+  width:calc(100% - 84px);
+  margin:24px 42px 42px;
+  padding:20px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--red);
+  color:#fff;
+  font-size:15px!important;
+  font-weight:800;
+  transition:.2s;
+}
+.recruit-entry-btn:hover{
+  background:var(--red2);
+  padding-left:28px;
+}
+.recruit-entry-btn b{font-size:20px}
+
+.recruit-final{
+  padding:110px 40px;
+  background:#202326;
+  color:#fff;
+}
+.recruit-final>div{
+  width:min(1080px,100%);
+  margin:auto;
+}
+.recruit-final p{
+  margin:0 0 14px;
+  font:600 12px Oswald;
+  letter-spacing:.18em;
+  color:#d45a66;
+}
+.recruit-final h2{
+  margin:0;
+  font-size:clamp(38px,4.2vw,58px);
+  line-height:1.4;
+}
+.recruit-final span{
+  display:block;
+  margin-top:22px;
+  font-size:16px;
+  line-height:2;
+  color:rgba(255,255,255,.87);
+}
+.recruit-final a{
+  width:340px;
+  margin-top:30px;
+  padding:19px 22px;
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  color:var(--ink);
+  font-size:14px!important;
+  font-weight:800;
+}
+.recruit-final a b{color:var(--red);font-size:18px}
+
+@media(max-width:1050px){
+  .recruit-index-grid{grid-template-columns:repeat(3,1fr)}
+  .recruit-index-grid a:nth-child(3){border-right:0}
+  .recruit-index-grid a:nth-child(n+4){border-top:1px solid var(--line)}
+  .mechanic-pay-table{grid-template-columns:repeat(3,1fr)}
+  .mechanic-pay-table>div:nth-child(3){border-right:0}
+  .mechanic-pay-table>div:nth-child(n+4){border-top:1px solid var(--line)}
+}
+@media(max-width:850px){
+  .recruit-container{width:calc(100% - 48px)}
+  .recruit-hero{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .recruit-hero-copy{
+    padding:70px 24px 55px;
+  }
+  .recruit-hero-copy h1{font-size:50px}
+  .recruit-hero-photo{
+    min-height:0;
+    height:300px;
+  }
+  .recruit-index{padding:70px 0}
+  .recruit-index-grid{grid-template-columns:1fr}
+  .recruit-index-grid a,
+  .recruit-index-grid a:nth-child(3){
+    min-height:145px;
+    border-right:0;
+    border-top:1px solid var(--line);
+  }
+  .recruit-index-grid a:first-child{border-top:0}
+  .recruit-index-grid strong{margin-top:18px}
+  .recruit-list{padding:70px 0 85px;gap:28px}
+  .recruit-sheet{width:calc(100% - 32px)}
+  .recruit-sheet-top{
+    grid-template-columns:1fr;
+    padding:28px 22px 24px;
+    gap:24px;
+  }
+  .recruit-role h2{font-size:34px}
+  .recruit-thumb{height:225px}
+  .recruit-salary{margin:0 22px;padding:25px 22px}
+  .recruit-salary-main strong{font-size:52px}
+  .recruit-salary-contact .recruit-salary-main strong{font-size:26px}
+  .mechanic-pay-table{
+    margin:16px 22px 0;
+    grid-template-columns:1fr 1fr;
+  }
+  .mechanic-pay-table>div,
+  .mechanic-pay-table>div:nth-child(3){
+    border-right:1px solid var(--line);
+    border-top:1px solid var(--line);
+  }
+  .mechanic-pay-table>div:nth-child(1),
+  .mechanic-pay-table>div:nth-child(2){border-top:0}
+  .mechanic-pay-table>div:nth-child(2n){border-right:0}
+  .recruit-detail-grid{
+    margin:20px 22px 0;
+    grid-template-columns:1fr;
+  }
+  .recruit-detail.wide{grid-column:auto}
+  .recruit-detail{min-height:0}
+  .recruit-condition-note{
+    margin:16px 22px 0;
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+  .recruit-entry-btn{
+    width:calc(100% - 44px);
+    margin:18px 22px 28px;
+  }
+  .recruit-final{padding:80px 24px}
+  .recruit-final h2{font-size:37px}
+  .recruit-final span{font-size:15px}
+  .recruit-final a{width:100%}
+}
