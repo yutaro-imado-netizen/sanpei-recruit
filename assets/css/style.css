@@ -167,3 +167,17 @@
     line-height:2!important;
   }
 }
+
+/* enlarge interview answer copy */
+.interview-detail article p{
+  font-size:19px!important;
+  line-height:2.05!important;
+  font-weight:500!important;
+  letter-spacing:.01em;
+}
+@media(max-width:850px){
+  .interview-detail article p{
+    font-size:17px!important;
+    line-height:2!important;
+  }
+}
