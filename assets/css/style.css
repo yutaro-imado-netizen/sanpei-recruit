@@ -974,3 +974,43 @@ body{
     object-position:center 18%;
   }
 }
+
+
+/* president message landscape framing */
+@media(min-width:851px){
+  .president-message .article-grid{
+    grid-template-columns:minmax(0,.9fr) minmax(620px,1.25fr);
+    gap:5%;
+    align-items:center;
+  }
+  .president-message .president-photo{
+    width:100%;
+    height:auto;
+    aspect-ratio:3 / 2;
+    overflow:hidden;
+    background:#ece8e1;
+  }
+  .president-message .president-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+  }
+}
+@media(max-width:1100px) and (min-width:851px){
+  .president-message .article-grid{
+    grid-template-columns:minmax(0,1fr) minmax(520px,1.15fr);
+    gap:4%;
+  }
+}
+@media(max-width:850px){
+  .president-message .president-photo{
+    width:100%;
+    height:auto;
+    aspect-ratio:3 / 2;
+  }
+  .president-message .president-photo img{
+    object-fit:cover;
+    object-position:center center;
+  }
+}
