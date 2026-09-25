@@ -100,3 +100,15 @@
 .interview-detail .message>p:last-child{font-size:14px;line-height:2.15}
 .interview-detail .message:after{font-size:78px;bottom:-25px}
 }
+
+/* rebalance interview closing message hierarchy */
+.interview-detail .message{padding:82px 9% 88px}
+.interview-detail .message:before{margin-bottom:16px}
+.interview-detail .message h2{font-size:clamp(25px,2.8vw,36px);line-height:1.45;margin:0 0 34px;padding-bottom:20px}
+.interview-detail .message h2:after{width:54px;height:2px}
+.interview-detail .message>p:last-child{max-width:900px;font-size:clamp(17px,1.45vw,20px);line-height:2.05;font-weight:600;letter-spacing:.02em}
+@media(max-width:850px){
+.interview-detail .message{padding:58px 28px 62px}
+.interview-detail .message h2{font-size:24px;line-height:1.5;margin-bottom:27px;padding-bottom:18px}
+.interview-detail .message>p:last-child{font-size:16px;line-height:2;font-weight:500}
+}
