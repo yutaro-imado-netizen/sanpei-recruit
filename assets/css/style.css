@@ -57,3 +57,30 @@
 .interview-detail .message{margin-left:-24px;margin-right:-24px;padding:60px 28px}
 .interview-detail .message:after{font-size:75px}
 }
+
+/* individual interview hero */
+.interview-hero{min-height:660px;display:grid;grid-template-columns:58% 42%;position:relative;background:#f3f0ea;overflow:hidden}
+.interview-hero-photo{min-height:660px;background:linear-gradient(135deg,#cbc8c0,#96948e)}
+.interview-hero-copy{position:relative;background:var(--red);color:#fff;padding:90px 7vw 70px 6vw;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.interview-no{font:600 13px Oswald;letter-spacing:.2em;margin:0 0 48px;color:#fff9}
+.interview-role{font:600 11px Oswald;letter-spacing:.22em;margin:0 0 14px}
+.interview-hero-copy h1{font-size:clamp(34px,4.2vw,62px);line-height:1.35;margin:0;letter-spacing:-.04em}
+.interview-hero-copy h1 strong{font-size:.65em;font-weight:600}
+.hero-deco{position:absolute;right:-12px;bottom:-38px;font:600 115px Oswald;letter-spacing:.02em;color:rgba(255,255,255,.055)}
+.interview-hero+.interview-detail{padding-top:0}
+.interview-hero+.interview-detail .interview-title{margin:-72px 0 115px auto}
+.interview-detail article:nth-of-type(1)>div:first-child:before{content:"01"}
+.interview-detail article:nth-of-type(2)>div:first-child:before{content:"02"}
+.interview-detail article:nth-of-type(3)>div:first-child:before{content:"03"}
+.interview-detail article:nth-of-type(4)>div:first-child:before{content:"04"}
+.interview-detail article>div:first-child:before{position:absolute;z-index:-1;top:-35px;left:-20px;font:600 110px Oswald;color:#f3f0ea}
+.interview-detail article.flip>div:first-child:before{left:auto;right:-10px}
+@media(max-width:850px){
+.interview-hero{min-height:680px;grid-template-columns:1fr;grid-template-rows:55% 45%}
+.interview-hero-photo{min-height:0}
+.interview-hero-copy{padding:38px 28px 45px}
+.interview-no{margin-bottom:20px}
+.interview-hero-copy h1{font-size:34px}
+.hero-deco{font-size:72px;bottom:-22px}
+.interview-hero+.interview-detail .interview-title{margin:-28px 0 75px auto}
+}
