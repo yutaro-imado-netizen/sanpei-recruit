@@ -433,3 +433,238 @@
     margin:0;
   }
 }
+
+
+/* work page redesign */
+.work-hero-lead{
+  font-size:15px!important;
+  line-height:1.9;
+  font-weight:500!important;
+  margin-top:18px!important;
+  opacity:.9;
+}
+.work-intro{
+  padding-bottom:90px;
+}
+.work-intro .leadtext{
+  max-width:760px;
+  margin:38px 0 0;
+}
+.work-role-list{
+  background:#f4f1eb;
+  padding:40px 0 130px;
+}
+.work-role{
+  max-width:1280px;
+  margin:0 auto 36px;
+  display:grid;
+  grid-template-columns:46% 54%;
+  min-height:660px;
+  background:#fff;
+  overflow:hidden;
+}
+.work-role.reverse{
+  grid-template-columns:54% 46%;
+}
+.work-role.reverse .work-role-photo{
+  order:2;
+}
+.work-role-photo{
+  min-height:100%;
+}
+.work-role-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .6s ease;
+}
+.work-role:hover .work-role-photo img{
+  transform:scale(1.025);
+}
+.work-role-content{
+  padding:62px 64px 58px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.work-role-meta{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:20px;
+}
+.work-role-meta span{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  background:var(--red);
+  color:#fff;
+  font:600 13px Oswald;
+}
+.work-role-meta small{
+  color:var(--red);
+  font:600 11px Oswald;
+  letter-spacing:.18em;
+}
+.work-role-content>h2{
+  font-size:clamp(34px,3.3vw,50px);
+  margin:0 0 18px;
+  letter-spacing:-.04em;
+}
+.work-role-lead{
+  font-size:21px!important;
+  line-height:1.65!important;
+  font-weight:800!important;
+  margin:0 0 22px!important;
+}
+.work-role-content>p:not(.work-role-lead){
+  font-size:14px;
+  line-height:2;
+  color:#5f6468;
+  margin:0 0 30px;
+}
+.work-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.work-detail-grid>div{
+  position:relative;
+  padding:24px 22px 22px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  min-height:156px;
+}
+.work-detail-grid b{
+  display:block;
+  color:var(--red);
+  font:600 10px Oswald;
+  letter-spacing:.12em;
+  margin-bottom:9px;
+}
+.work-detail-grid strong{
+  display:block;
+  font-size:15px;
+  margin-bottom:8px;
+}
+.work-detail-grid p{
+  margin:0;
+  color:#777c80;
+  font-size:12px;
+  line-height:1.8;
+}
+.work-fit{
+  margin-top:24px;
+  padding:18px 20px;
+  background:#f7f5f1;
+  border-left:4px solid var(--red);
+}
+.work-fit span{
+  display:block;
+  color:var(--red);
+  font-size:11px;
+  font-weight:800;
+  margin-bottom:7px;
+}
+.work-fit p{
+  margin:0;
+  font-size:12px;
+  line-height:1.8;
+  font-weight:600;
+}
+.work-career{
+  max-width:none;
+  padding-left:max(40px,calc((100% - 1180px)/2));
+  padding-right:max(40px,calc((100% - 1180px)/2));
+}
+.career-panels{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-top:55px;
+}
+.career-panels .career-panel{
+  margin:0;
+  border-left:0;
+  border-top:5px solid var(--red);
+}
+.career-panels .career-panel small{
+  font:600 10px Oswald;
+  letter-spacing:.17em;
+  color:var(--red);
+}
+.career-panels .career-panel h3{
+  color:var(--ink);
+  margin:10px 0 28px;
+}
+.career-flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:9px;
+}
+.career-flow span{
+  padding:10px 12px;
+  background:#f4f1eb;
+  font-size:12px;
+  font-weight:700;
+}
+.career-flow i{
+  color:var(--red);
+  font-style:normal;
+  font-weight:800;
+}
+
+@media(max-width:1000px){
+  .work-role,
+  .work-role.reverse{
+    grid-template-columns:42% 58%;
+  }
+  .work-role-content{
+    padding:48px 38px;
+  }
+}
+@media(max-width:850px){
+  .work-intro{
+    padding-bottom:65px;
+  }
+  .work-role-list{
+    padding:24px 0 80px;
+  }
+  .work-role,
+  .work-role.reverse{
+    margin:0 18px 24px;
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .work-role.reverse .work-role-photo{
+    order:0;
+  }
+  .work-role-photo{
+    height:300px;
+  }
+  .work-role-content{
+    padding:36px 24px 34px;
+  }
+  .work-role-content>h2{
+    font-size:32px;
+  }
+  .work-role-lead{
+    font-size:18px!important;
+  }
+  .work-detail-grid{
+    grid-template-columns:1fr;
+  }
+  .work-detail-grid>div{
+    min-height:0;
+  }
+  .career-panels{
+    grid-template-columns:1fr;
+  }
+  .career-flow{
+    align-items:flex-start;
+  }
+}
