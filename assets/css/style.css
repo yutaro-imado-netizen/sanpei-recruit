@@ -84,3 +84,19 @@
 .hero-deco{font-size:72px;bottom:-22px}
 .interview-hero+.interview-detail .interview-title{margin:-28px 0 75px auto}
 }
+
+/* stronger closing message */
+.interview-detail .message{margin-top:80px;padding:100px 9% 95px;background:linear-gradient(125deg,#17191b 0%,#24272a 72%,#30171b 100%);border-top:6px solid var(--red)}
+.interview-detail .message:before{content:"TO THE NEXT GENERATION";display:block;font:600 11px Oswald;letter-spacing:.28em;color:#c64a56;margin-bottom:24px}
+.interview-detail .message>p:first-child{display:none}
+.interview-detail .message h2{position:relative;font-size:clamp(34px,4.4vw,54px);line-height:1.4;margin:0 0 42px;padding-bottom:28px;letter-spacing:-.03em}
+.interview-detail .message h2:after{content:"";position:absolute;left:0;bottom:0;width:72px;height:3px;background:var(--red)}
+.interview-detail .message>p:last-child{font-size:16px;line-height:2.25;font-weight:500;letter-spacing:.025em;max-width:800px}
+.interview-detail .message:after{content:"MESSAGE";right:-22px;bottom:-58px;font-size:150px;color:rgba(255,255,255,.028)}
+@media(max-width:850px){
+.interview-detail .message{margin-top:45px;padding:70px 30px 68px;border-top-width:4px}
+.interview-detail .message:before{font-size:9px;margin-bottom:18px}
+.interview-detail .message h2{font-size:31px;margin-bottom:30px;padding-bottom:22px}
+.interview-detail .message>p:last-child{font-size:14px;line-height:2.15}
+.interview-detail .message:after{font-size:78px;bottom:-25px}
+}
