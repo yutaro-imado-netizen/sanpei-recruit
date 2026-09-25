@@ -728,3 +728,64 @@
     object-position:center center;
   }
 }
+
+
+/* compact work cards for desktop */
+@media(min-width:851px){
+  .work-role{
+    max-width:1180px;
+    margin-bottom:28px;
+    grid-template-columns:40% 60%;
+  }
+  .work-role.reverse{
+    grid-template-columns:60% 40%;
+  }
+  .work-role-photo{
+    height:460px;
+  }
+  .work-role-content{
+    padding:34px 42px 32px;
+  }
+  .work-role-meta{
+    margin-bottom:12px;
+  }
+  .work-role-meta span{
+    width:36px;
+    height:36px;
+    font-size:11px;
+  }
+  .work-role-content>h2{
+    font-size:clamp(30px,2.7vw,42px);
+    margin-bottom:10px;
+  }
+  .work-role-lead{
+    font-size:18px!important;
+    line-height:1.5!important;
+    margin-bottom:14px!important;
+  }
+  .work-role-content>p:not(.work-role-lead){
+    font-size:13px;
+    line-height:1.75;
+    margin-bottom:18px;
+  }
+  .work-detail-grid>div{
+    min-height:112px;
+    padding:16px 18px 15px;
+  }
+  .work-detail-grid strong{
+    font-size:14px;
+    margin-bottom:5px;
+  }
+  .work-detail-grid p{
+    font-size:11px;
+    line-height:1.65;
+  }
+  .work-fit{
+    margin-top:16px;
+    padding:13px 16px;
+  }
+  .work-fit p{
+    font-size:11px;
+    line-height:1.6;
+  }
+}
