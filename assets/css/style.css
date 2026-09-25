@@ -130,3 +130,15 @@
 .interview-detail > .interview-title{font-size:initial;line-height:normal}
 .interview-detail .interview-title h2{font-size:29px!important;line-height:1.45!important}
 }
+
+/* center the interview top-message card */
+.interview-hero+.interview-detail .interview-title{
+  margin:-72px auto 115px!important;
+  width:min(820px,88%);
+}
+@media(max-width:850px){
+  .interview-hero+.interview-detail .interview-title{
+    margin:-28px auto 75px!important;
+    width:94%;
+  }
+}
