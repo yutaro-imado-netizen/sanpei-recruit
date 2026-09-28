@@ -4477,3 +4477,74 @@ footer>small{
     margin-bottom:6px;
   }
 }
+
+
+/* five minute data typography boost */
+/* Raise the visual floor for labels and figures in the data cards */
+.five-data-grid-current .five-stat small{
+  min-height:26px;
+  font-size:16px!important;
+  line-height:1.45!important;
+  font-weight:800!important;
+  letter-spacing:.01em;
+}
+.five-data-grid-current .five-stat strong{
+  font-size:clamp(60px,5vw,78px)!important;
+  line-height:.98!important;
+  letter-spacing:-.055em;
+}
+.five-data-grid-current .five-stat strong i{
+  font-size:17px!important;
+  margin-left:5px;
+  font-weight:700;
+}
+.five-data-grid-current .five-stat:nth-child(5) strong,
+.five-data-grid-current .five-stat:nth-child(7) strong{
+  font-size:clamp(68px,5.6vw,88px)!important;
+}
+.five-data-grid-current .five-stat p{
+  font-size:14px!important;
+  line-height:1.7!important;
+}
+
+/* Explicit light-card text colors so labels never disappear */
+.five-data-grid-current .five-stat:nth-child(2) small,
+.five-data-grid-current .five-stat:nth-child(2) p,
+.five-data-grid-current .five-stat:nth-child(4) small,
+.five-data-grid-current .five-stat:nth-child(4) p,
+.five-data-grid-current .five-stat:nth-child(5) small,
+.five-data-grid-current .five-stat:nth-child(5) p,
+.five-data-grid-current .five-stat:nth-child(6) small,
+.five-data-grid-current .five-stat:nth-child(6) p{
+  color:#34393d!important;
+}
+.five-data-grid-current .five-stat:nth-child(5) small{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+@media(max-width:1050px){
+  .five-data-grid-current .five-stat strong{
+    font-size:clamp(58px,8vw,74px)!important;
+  }
+  .five-data-grid-current .five-stat:nth-child(5) strong,
+  .five-data-grid-current .five-stat:nth-child(7) strong{
+    font-size:clamp(64px,9vw,82px)!important;
+  }
+}
+@media(max-width:850px){
+  .five-data-grid-current .five-stat small{
+    font-size:15px!important;
+  }
+  .five-data-grid-current .five-stat strong{
+    font-size:56px!important;
+  }
+  .five-data-grid-current .five-stat:nth-child(5) strong,
+  .five-data-grid-current .five-stat:nth-child(7) strong{
+    font-size:62px!important;
+  }
+  .five-data-grid-current .five-stat strong i{
+    font-size:15px!important;
+  }
+}
