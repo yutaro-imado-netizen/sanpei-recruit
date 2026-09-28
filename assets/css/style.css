@@ -4548,3 +4548,110 @@ footer>small{
     font-size:15px!important;
   }
 }
+
+
+/* homepage mobile hero final polish */
+@media(max-width:850px){
+  /* Keep the first view compact and make the photo fill the hero completely */
+  .hero{
+    height:calc(100svh - 12px)!important;
+    min-height:590px!important;
+    max-height:720px!important;
+    padding:0!important;
+    background:#d7d3cc!important;
+    overflow:hidden!important;
+  }
+
+  .hero-photo,
+  .hero-photo.site-photo{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:100%!important;
+    display:block!important;
+    background:#d7d3cc!important;
+  }
+
+  .hero-photo.site-photo img,
+  .hero-photo.hero-group img{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:100%!important;
+    max-width:none!important;
+    object-fit:cover!important;
+    object-position:58% center!important;
+  }
+
+  /* Gentle shading only behind the copy; keep the photograph visible */
+  .hero-photo.hero-group:after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:0!important;
+    background:linear-gradient(
+      0deg,
+      rgba(17,19,21,.24) 0%,
+      rgba(17,19,21,.04) 46%,
+      rgba(17,19,21,0) 72%
+    )!important;
+    pointer-events:none;
+  }
+
+  .hero-copy{
+    left:18px!important;
+    right:18px!important;
+    top:auto!important;
+    bottom:30px!important;
+    width:auto!important;
+    transform:none!important;
+    padding:18px 18px 20px!important;
+    background:rgba(255,255,255,.92)!important;
+    backdrop-filter:blur(5px)!important;
+    -webkit-backdrop-filter:blur(5px)!important;
+    box-shadow:0 10px 30px rgba(0,0,0,.14)!important;
+  }
+
+  .hero-copy .eyebrow{
+    margin:0 0 7px!important;
+    font-size:10px!important;
+    line-height:1.45!important;
+    letter-spacing:.17em!important;
+  }
+
+  .hero-copy h1{
+    margin:6px 0 12px!important;
+    font-size:clamp(36px,10.5vw,46px)!important;
+    line-height:1.12!important;
+    letter-spacing:-.045em!important;
+  }
+
+  .hero-copy h1 em{
+    border-bottom-width:4px!important;
+  }
+
+  .hero-copy>p:last-child{
+    margin:0!important;
+    font-size:13px!important;
+    line-height:1.55!important;
+    letter-spacing:.03em!important;
+  }
+}
+
+@media(max-width:390px){
+  .hero{
+    min-height:560px!important;
+    max-height:660px!important;
+  }
+  .hero-copy{
+    left:14px!important;
+    right:14px!important;
+    bottom:22px!important;
+    padding:16px 16px 18px!important;
+  }
+  .hero-copy h1{
+    font-size:35px!important;
+  }
+}
