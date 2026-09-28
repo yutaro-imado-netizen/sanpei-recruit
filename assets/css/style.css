@@ -4361,3 +4361,100 @@ footer>small{
     font-size:27px;
   }
 }
+
+
+/* five minute data grid alignment */
+/* Rebuild the confirmed-data area into a deliberate 4 + 3 editorial grid */
+.five-data-grid-current{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:8px;
+  background:transparent;
+}
+.five-data-grid-current .five-stat{
+  grid-column:auto!important;
+  min-height:205px;
+  padding:24px 24px 22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border:1px solid rgba(32,35,38,.08);
+}
+.five-data-grid-current .five-stat:nth-child(-n+4){
+  grid-column:span 3!important;
+}
+.five-data-grid-current .five-stat:nth-child(n+5){
+  grid-column:span 4!important;
+}
+.five-data-grid-current .five-stat small{
+  min-height:22px;
+  display:flex;
+  align-items:flex-start;
+  font-size:12px;
+  line-height:1.5;
+}
+.five-data-grid-current .five-stat strong{
+  margin:18px 0 12px;
+  line-height:1!important;
+}
+.five-data-grid-current .five-stat p{
+  min-height:38px;
+  margin:0;
+  display:flex;
+  align-items:flex-end;
+  line-height:1.65;
+}
+.five-data-grid-current .five-stat:nth-child(5) strong,
+.five-data-grid-current .five-stat:nth-child(7) strong{
+  font-size:clamp(46px,4.8vw,68px);
+}
+.five-license-panel{
+  margin-top:22px;
+}
+
+/* Keep the qualification panel visually aligned with the data grid */
+.five-license-chart{
+  grid-template-columns:1fr 1fr;
+  gap:20px 34px;
+}
+.five-license-row{
+  min-width:0;
+}
+.five-license-name{
+  min-height:34px;
+}
+.five-license-note{
+  margin-top:26px;
+}
+
+@media(max-width:1050px){
+  .five-data-grid-current{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .five-data-grid-current .five-stat,
+  .five-data-grid-current .five-stat:nth-child(-n+4),
+  .five-data-grid-current .five-stat:nth-child(n+5){
+    grid-column:auto!important;
+  }
+  .five-data-grid-current .five-stat:last-child{
+    grid-column:1 / -1!important;
+  }
+}
+@media(max-width:850px){
+  .five-data-grid-current{
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+  .five-data-grid-current .five-stat,
+  .five-data-grid-current .five-stat:last-child{
+    grid-column:1!important;
+    min-height:165px;
+  }
+  .five-data-grid-current .five-stat p{
+    min-height:0;
+  }
+  .five-license-chart{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+}
