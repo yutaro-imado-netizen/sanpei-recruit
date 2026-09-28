@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90" role="img" aria-labelledby="title">
+<title>CAR GALLERY MIHIRA</title>
+<rect width="180" height="90" fill="#f10d18"/>
+<defs>
+  <path id="topArc" d="M28 37 Q90 5 152 37"/>
+</defs>
+<text fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700" letter-spacing=".5">
+  <textPath href="#topArc" startOffset="50%" text-anchor="middle">CAR GALLERY</textPath>
+</text>
+<path d="M27 43 Q90 18 153 43" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<text x="90" y="79" text-anchor="middle" fill="#fff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="43" font-weight="900" textLength="164" lengthAdjust="spacingAndGlyphs">MIHIRA</text>
+</svg>
