@@ -3072,3 +3072,225 @@ footer small{
   .five-next-grid{grid-template-columns:1fr 1fr}
   .five-next-grid a{border-bottom:1px solid #ffffff40}
 }
+
+
+/* five minute data colors and interview detail */
+/* Colorful data board */
+.five-data-grid{
+  gap:4px;
+  background:#f2f0eb;
+}
+.five-data-grid .five-stat{
+  border:0;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.five-data-grid .five-stat:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  position:relative;
+  z-index:1;
+}
+.five-data-grid .five-stat:nth-child(1){background:#fff1dd}
+.five-data-grid .five-stat:nth-child(2){background:#e8f3ee}
+.five-data-grid .five-stat:nth-child(3){background:#e8eef8}
+.five-data-grid .five-stat:nth-child(4){background:#f6e8ec}
+.five-data-grid .five-stat:nth-child(5){background:#e50920}
+.five-data-grid .five-stat:nth-child(6){background:#f4efcf}
+.five-data-grid .five-stat:nth-child(7){background:#e7f1f7}
+.five-data-grid .five-stat:nth-child(8){background:#efe8f5}
+.five-data-grid .five-stat:nth-child(9){background:#e9f2df}
+.five-data-grid .five-stat:nth-child(10){background:#202326}
+.five-data-grid .five-stat:nth-child(11){background:#f7e8d9}
+.five-data-grid .five-stat:nth-child(12){background:#dfeff0}
+.five-data-grid .five-stat:nth-child(13){background:#f6e8ec}
+.five-data-grid .five-stat:nth-child(14){background:#e9eef9}
+.five-data-grid .five-stat:nth-child(15){background:#f2efdc}
+.five-data-grid .five-stat:nth-child(16){background:#e8dfd2}
+
+.five-data-grid .five-stat:nth-child(1) strong,
+.five-data-grid .five-stat:nth-child(5) strong,
+.five-data-grid .five-stat:nth-child(10) strong,
+.five-data-grid .five-stat:nth-child(16) strong{
+  letter-spacing:-.055em;
+}
+.five-data-grid .five-stat:nth-child(2) strong{color:#1f6f5d}
+.five-data-grid .five-stat:nth-child(3) strong{color:#3b5d91}
+.five-data-grid .five-stat:nth-child(4) strong{color:#9c4c66}
+.five-data-grid .five-stat:nth-child(6) strong{color:#7b6a16}
+.five-data-grid .five-stat:nth-child(7) strong{color:#3f7185}
+.five-data-grid .five-stat:nth-child(8) strong{color:#735184}
+.five-data-grid .five-stat:nth-child(9) strong{color:#547636}
+.five-data-grid .five-stat:nth-child(11) strong{color:#a65c26}
+.five-data-grid .five-stat:nth-child(12) strong{color:#357277}
+.five-data-grid .five-stat:nth-child(13) strong{color:#9c4c66}
+.five-data-grid .five-stat:nth-child(14) strong{color:#506ca3}
+.five-data-grid .five-stat:nth-child(15) strong{color:#777026}
+.five-data-grid .five-stat:nth-child(16) strong{color:#8b4e25}
+
+/* Interview excerpts */
+.five-people{background:#fbfaf7}
+.five-interview-feature{
+  display:grid;
+  grid-template-columns:42% 58%;
+  margin-bottom:26px;
+  background:#fff;
+  box-shadow:0 14px 38px rgba(0,0,0,.055);
+  overflow:hidden;
+}
+.five-interview-feature.reverse{
+  grid-template-columns:58% 42%;
+}
+.five-interview-feature.reverse .five-interview-person{order:2}
+.five-interview-person{
+  position:relative;
+  min-height:520px;
+  background:#202326;
+  color:#fff;
+}
+.five-interview-person>.site-photo{
+  position:absolute;
+  inset:0;
+}
+.five-interview-person img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.five-interview-person:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,rgba(20,22,24,.86) 0%,rgba(20,22,24,.25) 58%,rgba(20,22,24,.04) 100%);
+}
+.five-interview-person-info{
+  position:absolute;
+  z-index:2;
+  left:30px;
+  right:30px;
+  bottom:28px;
+}
+.five-interview-person-info small{
+  font:600 10px Oswald;
+  letter-spacing:.15em;
+  color:#fff9;
+}
+.five-interview-person-info h3{
+  margin:12px 0 12px;
+  font-size:29px;
+  line-height:1.5;
+  color:#fff;
+}
+.five-interview-person-info p{
+  margin:0;
+  font-size:14px;
+  color:#fff!important;
+}
+.five-interview-qa{
+  padding:38px 40px 34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.five-interview-qa>div{
+  padding:0 0 25px;
+  margin-bottom:24px;
+  border-bottom:1px solid #e6e1da;
+  position:relative;
+}
+.five-interview-qa>div:last-of-type{
+  margin-bottom:0;
+}
+.five-interview-qa span{
+  display:grid;
+  place-items:center;
+  width:28px;
+  height:28px;
+  margin-bottom:10px;
+  background:var(--red);
+  color:#fff;
+  font:700 12px Oswald;
+}
+.five-interview-qa h4{
+  margin:0 0 11px;
+  font-size:18px;
+  line-height:1.6;
+}
+.five-interview-qa p{
+  margin:0;
+  font-size:14.5px;
+  line-height:1.95;
+  color:#454b50;
+}
+.five-interview-qa>a{
+  display:flex;
+  justify-content:space-between;
+  width:260px;
+  margin-top:24px;
+  padding:13px 0;
+  border-bottom:2px solid var(--red);
+  font-size:13px;
+  font-weight:800;
+}
+.five-interview-qa>a b{color:var(--red)}
+.five-more-interviews{
+  margin-top:46px;
+  padding:42px 44px;
+  background:#202326;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.five-more-interviews:after{
+  content:"PEOPLE";
+  position:absolute;
+  right:22px;
+  top:-26px;
+  font:600 110px Oswald;
+  color:rgba(255,255,255,.035);
+}
+.five-more-interviews>p{
+  margin:0 0 8px;
+  font:600 10px Oswald;
+  letter-spacing:.18em;
+  color:#d45a66;
+}
+.five-more-interviews h3{
+  margin:0;
+  font-size:31px;
+  color:#fff;
+}
+.five-more-interviews>span{
+  display:block;
+  max-width:700px;
+  margin-top:12px;
+  font-size:14px;
+  line-height:1.9;
+  color:#fffd;
+}
+.five-more-interviews>a{
+  display:flex;
+  justify-content:space-between;
+  width:280px;
+  margin-top:22px;
+  padding:14px 0;
+  border-bottom:1px solid #fff8;
+  font-size:13px;
+  font-weight:800;
+}
+.five-more-interviews>a b{color:#d45a66}
+
+@media(max-width:850px){
+  .five-interview-feature,
+  .five-interview-feature.reverse{
+    grid-template-columns:1fr;
+  }
+  .five-interview-feature.reverse .five-interview-person{order:0}
+  .five-interview-person{min-height:390px}
+  .five-interview-person-info{left:22px;right:22px;bottom:22px}
+  .five-interview-person-info h3{font-size:25px}
+  .five-interview-qa{padding:30px 22px 26px}
+  .five-interview-qa>a{width:100%}
+  .five-more-interviews{padding:32px 24px}
+  .five-more-interviews h3{font-size:27px}
+  .five-more-interviews>a{width:100%}
+}
