@@ -3670,3 +3670,34 @@ footer small{
     color:#ffadb5;
   }
 }
+
+
+/* interview closing message contrast fix */
+/* Closing message sits on a dark gradient: force high-contrast copy */
+.interview-detail .message{
+  color:#fff!important;
+}
+.interview-detail .message:before{
+  color:#ff6f7d!important;
+}
+.interview-detail .message h2,
+.interview-detail .message h3,
+.interview-detail .message strong{
+  color:#fff!important;
+}
+.interview-detail .message > p:last-child{
+  color:rgba(255,255,255,.92)!important;
+}
+.interview-detail .message h2:after{
+  background:#e33949!important;
+}
+.interview-detail .message:after{
+  color:rgba(255,255,255,.045)!important;
+}
+
+/* Ensure no global light-background body rule overrides dark interview panels */
+.interview-detail .message p,
+.interview-detail .message span,
+.interview-detail .message a{
+  color:rgba(255,255,255,.92);
+}
