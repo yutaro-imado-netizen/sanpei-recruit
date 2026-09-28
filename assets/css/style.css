@@ -3427,3 +3427,246 @@ footer small{
     transition:none;
   }
 }
+
+
+/* five minute full contrast audit */
+/* Page-wide visual/contrast pass for 5-minute overview */
+.five-page{
+  --five-text:#25292d;
+  --five-body:#41474c;
+  --five-sub:#596066;
+  --five-warm:#f5f2ed;
+  --five-warm-2:#ebe7e0;
+  color:var(--five-text);
+}
+
+/* Stronger section separation */
+.five-hero{background:var(--red)}
+.five-intro{background:#f7f4ef}
+.five-data{background:#ebe7e0}
+.five-company{background:#fff}
+.five-work{background:#f4f1eb}
+.five-environment{background:var(--red)}
+.five-people{background:#f7f4ef}
+.five-next{background:#202326}
+
+/* Body copy: keep it clearly darker than its background */
+.five-intro-copy{color:#25292d!important}
+.five-intro .five-container>p:last-child{color:#50575c}
+.five-business-grid p,
+.five-work-copy>p,
+.five-env-photo p,
+.five-interview-qa p{
+  color:var(--five-body)!important;
+}
+.five-business-grid h3,
+.five-work-copy h3,
+.five-env-photo h3,
+.five-interview-qa h4{
+  color:#202326;
+}
+
+/* Small labels on light backgrounds */
+.five-point-head p,
+.five-business-grid small,
+.five-work-copy>small,
+.five-env-photo>div:last-child>small{
+  color:var(--red);
+  font-weight:700;
+}
+.five-data-note{
+  color:#4f565b;
+  font-weight:600;
+}
+
+/* Data tiles: explicit readable text per background */
+.five-data-grid .five-stat small{
+  color:#4b5257;
+  font-weight:800;
+}
+.five-data-grid .five-stat p{
+  color:#565d62;
+  font-size:12px;
+}
+.five-data-grid .five-stat:nth-child(3) small,
+.five-data-grid .five-stat:nth-child(3) p,
+.five-data-grid .five-stat:nth-child(8) small,
+.five-data-grid .five-stat:nth-child(8) p,
+.five-data-grid .five-stat:nth-child(13) small,
+.five-data-grid .five-stat:nth-child(13) p{
+  color:rgba(255,255,255,.88)!important;
+}
+.five-data-grid .five-stat:nth-child(5) small,
+.five-data-grid .five-stat:nth-child(5) p,
+.five-data-grid .five-stat:nth-child(10) small,
+.five-data-grid .five-stat:nth-child(10) p,
+.five-data-grid .five-stat:nth-child(16) small,
+.five-data-grid .five-stat:nth-child(16) p{
+  color:#fff!important;
+}
+
+/* Company section */
+.five-business-grid article{
+  background:#f4f1eb;
+}
+.five-business-grid article>div:last-child>span{
+  color:#d8d1c8;
+}
+.five-area-band{
+  background:#202326;
+}
+.five-area-band small{
+  color:rgba(255,255,255,.78);
+}
+.five-area-band strong,
+.five-area-band p{
+  color:#fff;
+}
+
+/* Work-number strip: strengthen small text */
+.five-work-numbers small{
+  color:rgba(255,255,255,.82);
+  font-size:10px;
+}
+.five-work-numbers p{
+  color:rgba(255,255,255,.88);
+  font-size:12px;
+}
+.five-work-numbers strong{
+  color:#fff;
+}
+
+/* Red environment section: no low-opacity copy */
+.five-point-light>span{
+  background:#fff;
+  color:var(--red);
+}
+.five-point-light p{
+  color:rgba(255,255,255,.90)!important;
+}
+.five-point-light h2{
+  color:#fff!important;
+}
+.five-env-grid article>span,
+.five-env-grid small{
+  color:rgba(255,255,255,.88)!important;
+}
+.five-env-grid strong,
+.five-env-grid p{
+  color:#fff!important;
+}
+.five-env-grid{
+  border-color:rgba(255,255,255,.42);
+}
+.five-env-grid article{
+  border-color:rgba(255,255,255,.42);
+}
+.five-env-photo{
+  background:#fff;
+  color:#202326;
+}
+.five-ratio>span{
+  background:#f1ede7;
+  color:#202326;
+}
+.five-ratio small{
+  color:#43494e;
+}
+
+/* Interview overlays: keep text readable over photography */
+.five-interview-person:after{
+  background:linear-gradient(0deg,rgba(15,17,19,.94) 0%,rgba(15,17,19,.58) 42%,rgba(15,17,19,.12) 78%,rgba(15,17,19,.04) 100%);
+}
+.five-interview-person-info small{
+  color:rgba(255,255,255,.90);
+}
+.five-interview-person-info h3,
+.five-interview-person-info p{
+  color:#fff!important;
+  text-shadow:0 2px 14px rgba(0,0,0,.24);
+}
+.five-interview-qa{
+  background:#fff;
+}
+.five-interview-qa>a{
+  color:#202326;
+}
+
+/* Dark interview CTA and final navigation */
+.five-more-interviews>p,
+.five-next .five-container>p{
+  color:#ff9aa4;
+  font-weight:700;
+}
+.five-more-interviews h3,
+.five-more-interviews>span,
+.five-more-interviews>a,
+.five-next h2,
+.five-next-grid strong{
+  color:#fff;
+}
+.five-more-interviews>span{
+  color:rgba(255,255,255,.88);
+}
+.five-more-interviews>a{
+  border-color:rgba(255,255,255,.65);
+}
+.five-next-grid span{
+  color:rgba(255,255,255,.80);
+  font-size:10px;
+}
+.five-next-grid a{
+  transition:background .2s ease,transform .2s ease;
+}
+.five-next-grid a:hover{
+  background:rgba(255,255,255,.07);
+  transform:translateY(-2px);
+}
+.five-next-grid b,
+.five-more-interviews>a b{
+  color:#ff9aa4;
+}
+
+/* Local nav: clearer active/hover affordance */
+.five-local-nav a{
+  color:#2b3034;
+  background:#fff;
+}
+.five-local-nav a:hover{
+  background:#f3efe9;
+  color:var(--red);
+}
+
+/* Links need enough contrast on light areas */
+.five-work-copy a,
+.five-all-people{
+  color:#202326;
+}
+.five-work-copy a b,
+.five-all-people b{
+  color:var(--red);
+}
+
+/* Slightly stronger card boundaries where white meets warm white */
+.five-interview-feature,
+.five-work-feature{
+  border:1px solid #e3ded7;
+}
+.five-business-grid article{
+  border:1px solid #e7e1d9;
+}
+
+/* Mobile: keep red/dark sections readable at smaller sizes */
+@media(max-width:850px){
+  .five-env-grid small,
+  .five-env-grid article>span{
+    color:rgba(255,255,255,.92)!important;
+  }
+  .five-work-numbers small{
+    color:rgba(255,255,255,.88);
+  }
+  .five-more-interviews>p,
+  .five-next .five-container>p{
+    color:#ffadb5;
+  }
+}
