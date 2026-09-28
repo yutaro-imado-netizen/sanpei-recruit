@@ -3294,3 +3294,136 @@ footer small{
   .five-more-interviews h3{font-size:27px}
   .five-more-interviews>a{width:100%}
 }
+
+
+/* five minute brand palette and motion */
+/* Brand-aligned data board: red / charcoal / white / warm neutral */
+.five-data-grid{
+  gap:3px;
+  background:#d9d4cc;
+}
+.five-data-grid .five-stat{
+  position:relative;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:none;
+}
+.five-data-grid .five-stat:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:4px;
+  background:var(--red);
+}
+.five-data-grid .five-stat:after{
+  content:"";
+  position:absolute;
+  right:-24px;
+  bottom:-34px;
+  width:105px;
+  height:105px;
+  border:1px solid rgba(32,35,38,.07);
+  border-radius:50%;
+}
+.five-data-grid .five-stat:nth-child(1),
+.five-data-grid .five-stat:nth-child(4),
+.five-data-grid .five-stat:nth-child(7),
+.five-data-grid .five-stat:nth-child(11),
+.five-data-grid .five-stat:nth-child(14){
+  background:#fff;
+}
+.five-data-grid .five-stat:nth-child(2),
+.five-data-grid .five-stat:nth-child(6),
+.five-data-grid .five-stat:nth-child(9),
+.five-data-grid .five-stat:nth-child(12),
+.five-data-grid .five-stat:nth-child(15){
+  background:#ebe7e0;
+}
+.five-data-grid .five-stat:nth-child(3),
+.five-data-grid .five-stat:nth-child(8),
+.five-data-grid .five-stat:nth-child(13){
+  background:#202326;
+}
+.five-data-grid .five-stat:nth-child(5),
+.five-data-grid .five-stat:nth-child(10),
+.five-data-grid .five-stat:nth-child(16){
+  background:var(--red);
+}
+.five-data-grid .five-stat:nth-child(3):before,
+.five-data-grid .five-stat:nth-child(8):before,
+.five-data-grid .five-stat:nth-child(13):before{
+  background:#fff;
+}
+.five-data-grid .five-stat:nth-child(3) small,
+.five-data-grid .five-stat:nth-child(3) strong,
+.five-data-grid .five-stat:nth-child(3) p,
+.five-data-grid .five-stat:nth-child(8) small,
+.five-data-grid .five-stat:nth-child(8) strong,
+.five-data-grid .five-stat:nth-child(8) p,
+.five-data-grid .five-stat:nth-child(13) small,
+.five-data-grid .five-stat:nth-child(13) strong,
+.five-data-grid .five-stat:nth-child(13) p,
+.five-data-grid .five-stat:nth-child(5) small,
+.five-data-grid .five-stat:nth-child(5) strong,
+.five-data-grid .five-stat:nth-child(5) p,
+.five-data-grid .five-stat:nth-child(10) small,
+.five-data-grid .five-stat:nth-child(10) strong,
+.five-data-grid .five-stat:nth-child(10) p,
+.five-data-grid .five-stat:nth-child(16) small,
+.five-data-grid .five-stat:nth-child(16) strong,
+.five-data-grid .five-stat:nth-child(16) p{
+  color:#fff!important;
+}
+.five-data-grid .five-stat:nth-child(3):after,
+.five-data-grid .five-stat:nth-child(8):after,
+.five-data-grid .five-stat:nth-child(13):after,
+.five-data-grid .five-stat:nth-child(5):after,
+.five-data-grid .five-stat:nth-child(10):after,
+.five-data-grid .five-stat:nth-child(16):after{
+  border-color:rgba(255,255,255,.14);
+}
+.five-data-grid .five-stat strong{
+  color:#202326;
+}
+.five-data-grid .five-stat:nth-child(2) strong,
+.five-data-grid .five-stat:nth-child(4) strong,
+.five-data-grid .five-stat:nth-child(6) strong,
+.five-data-grid .five-stat:nth-child(7) strong,
+.five-data-grid .five-stat:nth-child(9) strong,
+.five-data-grid .five-stat:nth-child(11) strong,
+.five-data-grid .five-stat:nth-child(12) strong,
+.five-data-grid .five-stat:nth-child(14) strong,
+.five-data-grid .five-stat:nth-child(15) strong{
+  color:#202326;
+}
+
+/* Scroll reveal and number count-up */
+.motion-ready .five-data-grid .five-stat{
+  opacity:0;
+  transform:translateY(24px) scale(.985);
+}
+.motion-ready .five-data-grid .five-stat.is-visible{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  transition:opacity .58s ease,transform .58s cubic-bezier(.2,.75,.25,1);
+}
+.motion-ready .five-data-grid .five-stat:nth-child(2){transition-delay:.04s}
+.motion-ready .five-data-grid .five-stat:nth-child(3){transition-delay:.08s}
+.motion-ready .five-data-grid .five-stat:nth-child(4){transition-delay:.12s}
+.motion-ready .five-data-grid .five-stat:nth-child(5){transition-delay:.04s}
+.motion-ready .five-data-grid .five-stat:nth-child(6){transition-delay:.08s}
+.motion-ready .five-data-grid .five-stat:nth-child(7){transition-delay:.12s}
+.motion-ready .five-data-grid .five-stat:nth-child(8){transition-delay:.16s}
+.five-stat strong[data-count],
+.five-stat strong[data-count-range]{
+  font-variant-numeric:tabular-nums;
+}
+@media(prefers-reduced-motion:reduce){
+  .motion-ready .five-data-grid .five-stat{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+}
