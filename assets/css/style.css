@@ -3701,3 +3701,183 @@ footer small{
 .interview-detail .message a{
   color:rgba(255,255,255,.92);
 }
+
+
+/* site-wide contrast audit */
+/* Final contrast safety pass across all pages */
+
+/* Footer */
+footer p{
+  color:rgba(255,255,255,.78)!important;
+}
+footer>small{
+  color:rgba(255,255,255,.62)!important;
+}
+
+/* Generic red/dark section labels */
+.section-head.light p{
+  color:rgba(255,255,255,.88)!important;
+}
+.business-list span,
+.job-list span{
+  color:rgba(255,255,255,.82)!important;
+}
+
+/* Subpage red hero */
+.subhero>div:first-child,
+.subhero>div:first-child h1,
+.subhero>div:first-child p{
+  color:#fff!important;
+}
+
+/* Interview hero */
+.interview-hero-copy{
+  color:#fff!important;
+}
+.interview-hero-copy .interview-no{
+  color:rgba(255,255,255,.86)!important;
+}
+.interview-hero-copy .interview-role,
+.interview-hero-copy h1,
+.interview-hero-copy h1 strong{
+  color:#fff!important;
+}
+
+/* Interview closing message */
+.interview-detail .message:before{
+  color:#ff7d89!important;
+}
+.interview-detail .message h2,
+.interview-detail .message>p:last-child{
+  color:#fff!important;
+}
+
+/* Factory tour dark sections */
+.vf-map .vf-section-head>p{
+  color:#ff8d98!important;
+}
+.vf-map .vf-section-head>span{
+  color:rgba(255,255,255,.86)!important;
+}
+.vf-map-grid b{
+  color:rgba(255,255,255,.82)!important;
+}
+.vf-map-grid span{
+  color:rgba(255,255,255,.88)!important;
+}
+.vf-map-grid strong,
+.vf-map-grid i{
+  color:#fff!important;
+}
+.vf-workflow .vf-section-head>p,
+.vf-workflow .vf-section-head h2,
+.vf-workflow .vf-flow-grid b,
+.vf-workflow .vf-flow-grid strong,
+.vf-workflow .vf-flow-grid p,
+.vf-workflow .vf-flow-grid i{
+  color:#fff!important;
+}
+.vf-real-content>p{
+  color:rgba(255,255,255,.84)!important;
+}
+.vf-real-content h2,
+.vf-real-content>span{
+  color:#fff!important;
+}
+
+/* Recruitment page dark panels */
+.recruit-v3-hero-copy>p{
+  color:#ff8d98!important;
+}
+.recruit-v3-hero-copy h1{
+  color:#fff!important;
+}
+.recruit-v3-hero-copy>span{
+  color:rgba(255,255,255,.9)!important;
+}
+.recruit-v3-pay>small{
+  color:rgba(255,255,255,.82)!important;
+}
+.recruit-v3-pay b,
+.recruit-v3-pay i,
+.recruit-v3-pay span{
+  color:#fff!important;
+}
+.recruit-v3-pay>p{
+  color:rgba(255,255,255,.82)!important;
+}
+.recruit-v3-final p{
+  color:#ff8d98!important;
+}
+.recruit-v3-final h2{
+  color:#fff!important;
+}
+.recruit-v3-final span{
+  color:rgba(255,255,255,.9)!important;
+}
+
+/* 5-minute page dark/red panels */
+.five-area-band small{
+  color:rgba(255,255,255,.84)!important;
+}
+.five-area-band strong,
+.five-area-band p{
+  color:#fff!important;
+}
+.five-work-numbers small{
+  color:rgba(255,255,255,.86)!important;
+}
+.five-work-numbers strong,
+.five-work-numbers p{
+  color:#fff!important;
+}
+.five-environment .five-point-head p,
+.five-environment .five-point-head h2,
+.five-env-grid article>span,
+.five-env-grid small,
+.five-env-grid strong,
+.five-env-grid p{
+  color:#fff!important;
+}
+.five-next .five-container>p,
+.five-more-interviews>p{
+  color:#ff9aa4!important;
+}
+.five-next h2,
+.five-next-grid strong,
+.five-more-interviews h3,
+.five-more-interviews>span,
+.five-more-interviews>a{
+  color:#fff!important;
+}
+
+/* Top page dark photo section */
+.factory-copy,
+.factory-copy small,
+.factory-copy h2,
+.factory-copy p{
+  color:#fff!important;
+}
+
+/* Buttons on light fills inside dark sections keep dark text */
+.factory-copy a,
+.vf-real-buttons a:first-child,
+.recruit-v3-final a,
+.five-more-interviews a{
+  color:#202326;
+}
+.five-more-interviews a{
+  color:#fff!important;
+}
+
+/* Tiny text should never fall below useful contrast */
+@media(max-width:850px){
+  footer p{color:rgba(255,255,255,.82)!important}
+  footer>small{color:rgba(255,255,255,.68)!important}
+  .vf-map-grid b,
+  .vf-map-grid span,
+  .recruit-v3-pay>small,
+  .five-work-numbers small{
+    color:rgba(255,255,255,.9)!important;
+  }
+}
