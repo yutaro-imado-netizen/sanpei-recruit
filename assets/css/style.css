@@ -3881,3 +3881,41 @@ footer>small{
     color:rgba(255,255,255,.9)!important;
   }
 }
+
+
+/* MIHIRA official logo treatment */
+/* Replace the temporary M mark/text lockup with the CAR GALLERY MIHIRA logo */
+.logo{
+  position:relative;
+  display:block;
+  width:150px;
+  height:auto;
+  aspect-ratio:2 / 1;
+  flex:0 0 auto;
+  background:url("../img/mihira-logo.svg") center/contain no-repeat;
+  line-height:0;
+}
+.logo > *{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+.footer-logo{
+  width:180px;
+  aspect-ratio:2 / 1;
+  background-image:url("../img/mihira-logo.svg");
+}
+@media(max-width:850px){
+  .logo{
+    width:112px;
+  }
+  .footer-logo{
+    width:155px;
+  }
+}
