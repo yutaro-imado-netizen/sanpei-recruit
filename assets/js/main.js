@@ -71,4 +71,25 @@ const menu=document.querySelector('.menu');const nav=document.querySelector('.na
   },{threshold:.28});
 
   cards.forEach(card=>observer.observe(card));
+
+  const licensePanel=document.querySelector('.five-license-panel');
+  if(licensePanel){
+    const revealLicense=()=>{
+      licensePanel.classList.add('is-visible');
+      licensePanel.querySelectorAll('[data-count],[data-count-range]').forEach(animateNumber);
+    };
+    if(!('IntersectionObserver' in window) || reduce){
+      revealLicense();
+    }else{
+      const licenseObserver=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            revealLicense();
+            licenseObserver.unobserve(entry.target);
+          }
+        });
+      },{threshold:.25});
+      licenseObserver.observe(licensePanel);
+    }
+  }
 })();
